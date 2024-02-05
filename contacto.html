@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titulo">Jose Perdomo <span>Freelancer</span></h1>
+    </header>
+    <div class="nav-bar">
+      <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="sobremi.html">Sobre mi</a>
+        <a href="cliente.html">Cliente</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Diseño y Desarroollo Web <span> Freelancer</span></h2>
+
+        <div class="ubicacion">
+          <!--Icon-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-map-pin"
+            width="88"
+            height="88"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffc107"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+            <path
+              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+            />
+          </svg>
+
+          <p>Machali, Sexta region Chile</p>
+        </div>
+
+        <a class="boton" href="#">Contactar</a>
+      </div>
+    </section>
+
+    
+
+      <section>
+        <h2 class="contacto">Contacto</h2>
+        <form class="formulario sombra">
+          <fieldset>
+            <legend>Contactame llenando todos los campos</legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label for="name">Nombre</label>
+                <input class="input-text" type="text" placeholder="Tu nombre" />
+              </div>
+
+              <div class="campo">
+                <label for="name">Telefono</label>
+                <input class="input-text" type="text" placeholder="Tu telefono" />
+              </div>
+
+              <div class="campo">
+                <label for="name">Email</label>
+                <input class="input-text" type="text" placeholder="Tu Email" />
+              </div>
+
+              <div class="campo">
+                <label for="name">Mensaje</label>
+                <textarea class="input-text" name="" id="" cols="20" rows="2"></textarea>
+              </div>
+            </div> <!--contenedor-campos-->
+
+            <div class="alinear-derecha flex">
+              <input class="boton2 w-sm-100" type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <span><p>Copyright &copy; <script>
+        const date = new Date();
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const formattedDate = `${year}`;
+        document.write(`${formattedDate}`);
+      </script> JOSMPERDOMO</span> Freelancer</p> 
+    </footer>
+  </body>
+</html>
