@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | José Manuel Perdomo - Freelancer</title>
+  <meta name="description" content="Inicia tu proyecto digital con José Manuel Perdomo. Solicita una cotización personalizada para tu sitio web, e-commerce o aplicación a medida." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Normalize y Estilos Modernos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Luces Ambientales de Fondo -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header Sticky con Efecto Glassmorphism -->
+  <header class="header-glass">
+    <div class="contenedor nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio">
+        <div class="brand-badge">JP</div>
+        <span>Jose Perdomo</span> <span style="color: var(--text-muted); font-weight: 500;">• Freelancer</span>
+      </a>
+
+      <!-- Navegación Principal Escritorio -->
+      <nav class="navegacion-principal" aria-label="Menú principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="sobremi.html" class="nav-link">Sobre mí</a>
+        <a href="cliente.html" class="nav-link">Clientes</a>
+        <a href="contacto.html" class="nav-link activo">Contacto</a>
+      </nav>
+
+      <!-- Acciones de Navegación -->
+      <div class="nav-actions">
+        <!-- Selector Modo Oscuro / Claro -->
+        <button id="theme-toggle-btn" class="btn-theme-toggle" aria-label="Alternar tema de color" title="Alternar tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="contacto.html" class="btn-nav-cta">
+          <span>Contáctame</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer Menú Móvil -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Navegación móvil">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="sobremi.html" class="nav-link">Sobre mí</a>
+    <a href="cliente.html" class="nav-link">Clientes</a>
+    <a href="contacto.html" class="nav-link activo">Contacto</a>
+    <a href="contacto.html" class="boton" style="margin-top: 0.5rem; text-align: center;">Iniciar Proyecto</a>
+  </div>
+
+  <main class="contenedor" style="padding-top: 3.5rem;">
+    <!-- Encabezado de la página -->
+    <div class="section-header">
+      <span class="section-tag">Canales Abiertos</span>
+      <h1 class="section-title">Hablemos de tu <span class="gradient-text">Próximo Proyecto</span></h1>
+      <p class="section-desc">
+        ¿Tienes una idea en mente, necesitas una cotización o deseas modernizar tu web actual? Escríbeme y diseñemos la mejor solución.
+      </p>
+    </div>
+
+    <!-- Sección de Contacto Principal (2 Columnas) -->
+    <div class="contact-section-wrap">
+      <!-- Columna Izquierda: Información de Contacto Directo -->
+      <div>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Información Directa</h2>
+        <div class="contact-info-cards">
+          <!-- Correo -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">Correo Electrónico</div>
+              <a href="mailto:perdomomarcanojose@outlook.com" class="contact-info-value">perdomomarcanojose@outlook.com</a>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Canal principal para cotizaciones detalladas</div>
+            </div>
+          </div>
+
+          <!-- Ubicación -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">Ubicación & Cobertura</div>
+              <div class="contact-info-value">Machalí, Sexta Región de O'Higgins, Chile</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Reuniones presenciales en la región & atención remota global</div>
+            </div>
+          </div>
+
+          <!-- Perfil GitHub -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">Repositorios & Código</div>
+              <a href="https://github.com/josmperdomo" target="_blank" rel="noopener noreferrer" class="contact-info-value">github.com/josmperdomo</a>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Revisa código fuente y proyectos públicos</div>
+            </div>
+          </div>
+
+          <!-- Garantía -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">Garantía de Satisfacción</div>
+              <div class="contact-info-value">Soporte técnico post-entrega incluido</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">30 días de garantía y ajustes sin costo adicional</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Formulario Completo -->
+      <div class="glass-card">
+        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Formulario de Cotización</h2>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem;">
+          Completa los campos a continuación para darte una respuesta detallada con alcance y presupuesto estimado.
+        </p>
+
+        <form id="contact-form" class="formulario" novalidate>
+          <div class="form-group-row">
+            <div class="form-field">
+              <label class="form-label" for="name">Nombre Completo *</label>
+              <div class="input-container">
+                <span class="input-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
+                <input id="name" class="input-text" type="text" placeholder="Tu nombre" required />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="phone">Teléfono / WhatsApp</label>
+              <div class="input-container">
+                <span class="input-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </span>
+                <input id="phone" class="input-text" type="tel" placeholder="+56 9 8765 4321" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="email">Correo Electrónico *</label>
+            <div class="input-container">
+              <span class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <input id="email" class="input-text" type="email" placeholder="ejemplo@empresa.com" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="service-type">Tipo de Servicio Requerido</label>
+            <div class="input-container">
+              <span class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </span>
+              <select id="service-type" class="form-select">
+                <option value="diseno-web">Diseño Web Completo (Landing Page / Web Corporativa)</option>
+                <option value="ecommerce">Tienda Online / E-Commerce con Pasarela de Pago</option>
+                <option value="redisenio">Modernización y Rediseño de Sitio Existente</option>
+                <option value="app-web">Aplicación Web o Panel a Medida</option>
+                <option value="consultoria">Mantenimiento, SEO o Consultoría Técnica</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="message">Mensaje y Detalles del Proyecto *</label>
+            <textarea id="message" class="form-textarea" placeholder="Describe brevemente tus objetivos, requerimientos o cualquier enlace de referencia..." required></textarea>
+          </div>
+
+          <button type="submit" class="boton" style="width: 100%; justify-content: center; padding: 1rem;">
+            <span>Enviar Solicitud</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="glass-card" style="margin-top: 4rem; margin-bottom: 5rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+        <span class="section-tag">Dudas Comunes</span>
+        <h2 style="font-size: 1.75rem;">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span>¿Cómo se estructura el pago?</span>
+          </div>
+          <p class="feature-text">
+            Por lo general se divide en un 50% inicial al comenzar el desarrollo y el 50% restante al aprobar las pruebas finales previas al lanzamiento.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>¿Cuánto demora un proyecto típico?</span>
+          </div>
+          <p class="feature-text">
+            Una landing o web corporativa toma de 7 a 15 días laborales. Proyectos de comercio electrónico más complejos toman entre 2 y 4 semanas.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>¿Mi web se verá bien en teléfonos?</span>
+          </div>
+          <p class="feature-text">
+            Absolutamente. Cada página se construye bajo arquitectura Mobile-First y Responsive Design para garantizar una visualización perfecta en cualquier smartphone o tablet.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>¿Incluye soporte tras la entrega?</span>
+          </div>
+          <p class="feature-text">
+            Sí, entrego cada proyecto con 30 días de garantía y soporte técnico gratuito para resolver dudas o realizar calibraciones post-lanzamiento.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <div class="brand-badge">JP</div>
+            <span>Jose Perdomo</span>
+          </a>
+          <p class="footer-brand-desc">
+            Desarrollador web y consultor tecnológico independiente. Creando sitios webs modernos, rápidos y centrados en resultados de negocio desde hace más de una década.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/josmperdomo" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:perdomomarcanojose@outlook.com" class="social-btn" aria-label="Correo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="sobremi.html" class="footer-link">Sobre Mí</a></li>
+            <li><a href="cliente.html" class="footer-link">Portafolio & Clientes</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto Directo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#servicios" class="footer-link">Diseño Web UI/UX</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Aplicaciones Web</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Tiendas E-Commerce</a></li>
+            <li><a href="contacto.html" class="footer-link">Consultoría Técnica</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Machalí, Sexta Región</span></li>
+            <li><span class="footer-link">Chile</span></li>
+            <li><a href="mailto:perdomomarcanojose@outlook.com" class="footer-link">perdomomarcanojose@outlook.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> José Manuel Perdomo (JOSMPERDOMO). Todos los derechos reservados.
+        </div>
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Volver arriba">
+          <span>Volver arriba</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script interactivo -->
+  <script src="js/main.js"></script>
+</body>
+</html>

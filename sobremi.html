@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mí | José Manuel Perdomo - Developer Freelancer</title>
+  <meta name="description" content="Conoce la trayectoria de José Manuel Perdomo, programador web profesional con más de 10 años creando soluciones digitales, tiendas online y aplicaciones web eficientes." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Normalize y Estilos Modernos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Luces Ambientales de Fondo -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header Sticky con Efecto Glassmorphism -->
+  <header class="header-glass">
+    <div class="contenedor nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio">
+        <div class="brand-badge">JP</div>
+        <span>Jose Perdomo</span> <span style="color: var(--text-muted); font-weight: 500;">• Freelancer</span>
+      </a>
+
+      <!-- Navegación Principal Escritorio -->
+      <nav class="navegacion-principal" aria-label="Menú principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="sobremi.html" class="nav-link activo">Sobre mí</a>
+        <a href="cliente.html" class="nav-link">Clientes</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Acciones de Navegación -->
+      <div class="nav-actions">
+        <!-- Selector Modo Oscuro / Claro -->
+        <button id="theme-toggle-btn" class="btn-theme-toggle" aria-label="Alternar tema de color" title="Alternar tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="contacto.html" class="btn-nav-cta">
+          <span>Contáctame</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer Menú Móvil -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Navegación móvil">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="sobremi.html" class="nav-link activo">Sobre mí</a>
+    <a href="cliente.html" class="nav-link">Clientes</a>
+    <a href="contacto.html" class="nav-link">Contacto</a>
+    <a href="contacto.html" class="boton" style="margin-top: 0.5rem; text-align: center;">Iniciar Proyecto</a>
+  </div>
+
+  <main class="contenedor" style="padding-top: 3.5rem;">
+    <!-- Encabezado de la página -->
+    <div class="section-header">
+      <span class="section-tag">Perfil Profesional</span>
+      <h1 class="section-title">Sobre <span class="gradient-text">Mí</span></h1>
+      <p class="section-desc">Conoce al profesional detrás de cada línea de código y cada proyecto digital exitoso.</p>
+    </div>
+
+    <!-- Perfil y Biografía Principal -->
+    <div class="sobremi-grid">
+      <!-- Tarjeta Izquierda de Perfil -->
+      <aside class="glass-card profile-card">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <img class="myfoto" src="img/jmp.jpg" alt="Foto de perfil de José Manuel Perdomo" />
+        </div>
+        <h2 class="profile-name">José M. Perdomo</h2>
+        <div class="profile-role">Programador & Consultor Web</div>
+
+        <div class="pill-badge" style="margin-bottom: 1.25rem;">
+          <span class="status-dot"></span>
+          <span>10 Años de Experiencia</span>
+        </div>
+
+        <div style="font-size: 0.9rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.4rem; justify-content: center; margin-bottom: 1.5rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Machalí, Chile</span>
+        </div>
+
+        <a href="contacto.html" class="boton" style="width: 100%;">
+          <span>Trabajemos Juntos</span>
+        </a>
+      </aside>
+
+      <!-- Contenido de Biografía y Pilares de Valor -->
+      <div class="glass-card profile-bio-box">
+        <div>
+          <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;">
+            ¡Hola! Soy <span class="gradient-text">José Manuel Perdomo</span>
+          </h3>
+          <p class="bio-lead">
+            Soy <strong>programador web de profesión</strong> y me dedico a la elaboración y arquitectura de sitios y aplicaciones web desde hace <strong>10 años</strong>. Mi enfoque combina estética visual contemporánea, código limpio y rendimiento medible orientado a resultados.
+          </p>
+          <p style="color: var(--text-secondary); margin-top: 0.75rem; font-size: 0.98rem; line-height: 1.6;">
+            A lo largo de una década en el desarrollo independiente, he colaborado con clientes de diversos sectores (repuestos automotrices, moda femenina, e-commerce multirrubro y servicios), ayudándoles a consolidar una presencia digital sólida, funcional y de alto impacto.
+          </p>
+        </div>
+
+        <!-- Pilares Fundamentales -->
+        <div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border-glass); padding-bottom: 0.5rem;">
+            Mis Pilares de Trabajo
+          </h4>
+          <div class="features-grid">
+            <div class="feature-box">
+              <div class="feature-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Experiencia y Habilidades</span>
+              </div>
+              <p class="feature-text">
+                Capacidad probada para diseñar e implementar sitios web y aplicaciones a medida que resuelven necesidades reales con la última tecnología web.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Calidad y Eficiencia</span>
+              </div>
+              <p class="feature-text">
+                Desarrollo enfocado en tiempos acordados y estándares estrictos de rendimiento, accesibilidad y fidelidad técnica para cada entrega.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Soporte y Mantenimiento</span>
+              </div>
+              <p class="feature-text">
+                Acompañamiento continuo post-lanzamiento para asegurar que tu plataforma opere sin contratiempos, con actualizaciones y seguridad al día.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Precios Competitivos</span>
+              </div>
+              <p class="feature-text">
+                Tarifas claras, transparentes y justas, adaptadas a proyectos emergentes o marcas consolidadas sin sorpresas ni costos ocultos.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box" style="margin-top: 1rem;">
+            <div class="feature-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Comunicación Clara y Constante</span>
+            </div>
+            <p class="feature-text">
+              Te mantengo informado en cada fase del desarrollo con revisiones periódicas, claridad técnica y retroalimentación fluida en cada hito.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack & Herramientas -->
+    <section class="glass-card tech-stack-section" style="margin-bottom: 4rem;">
+      <div class="section-header" style="margin-bottom: 1.5rem; text-align: left;">
+        <span class="section-tag">Herramientas & Tecnologías</span>
+        <h3 style="font-size: 1.5rem;">Stack Tecnológico Dominado</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;">
+          Trabajo con las herramientas más sólidas y demandadas del ecosistema web moderno.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <span>HTML5 Semántico</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          <span>CSS3 & Modern Grids/Flexbox</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path></svg>
+          <span>JavaScript Moderno (ES6+)</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>
+          <span>React & UI Components</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <span>E-Commerce & Pagos Seguros</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          <span>Diseño UX/UI & Prototipado</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>
+          <span>Git & Control de Versiones GitHub</span>
+        </div>
+        <div class="tech-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          <span>Rendimiento Web & PageSpeed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metodología de Trabajo en 4 Pasos -->
+    <section class="contenedor" style="margin-bottom: 5rem;">
+      <div class="section-header">
+        <span class="section-tag">Proceso Garantizado</span>
+        <h2 class="section-title">Cómo Trabajamos Tu Proyecto</h2>
+        <p class="section-desc">Un flujo ágil, estructurado y sin sorpresas desde la primera reunión hasta el despliegue.</p>
+      </div>
+
+      <div class="servicios">
+        <div class="glass-card" style="text-align: center;">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--primario); margin-bottom: 0.5rem;">01</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Descubrimiento</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            Analizamos tus metas comerciales, público objetivo y requerimientos técnicos específicos para diseñar la mejor arquitectura.
+          </p>
+        </div>
+
+        <div class="glass-card" style="text-align: center;">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--secundario); margin-bottom: 0.5rem;">02</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Diseño & Código</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            Estructuración moderna en HTML5/CSS/JS con diseño responsive, micro-interacciones y revisiones colaborativas de avance.
+          </p>
+        </div>
+
+        <div class="glass-card" style="text-align: center;">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--acento-emerald); margin-bottom: 0.5rem;">03</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Lanzamiento & Soporte</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            Pruebas exhaustivas, publicación en tu servidor o GitHub Pages, optimización de velocidad y mantenimiento preventivo.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <div class="brand-badge">JP</div>
+            <span>Jose Perdomo</span>
+          </a>
+          <p class="footer-brand-desc">
+            Desarrollador web y consultor tecnológico independiente. Creando sitios webs modernos, rápidos y centrados en resultados de negocio desde hace más de una década.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/josmperdomo" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:perdomomarcanojose@outlook.com" class="social-btn" aria-label="Correo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="sobremi.html" class="footer-link">Sobre Mí</a></li>
+            <li><a href="cliente.html" class="footer-link">Portafolio & Clientes</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto Directo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#servicios" class="footer-link">Diseño Web UI/UX</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Aplicaciones Web</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Tiendas E-Commerce</a></li>
+            <li><a href="contacto.html" class="footer-link">Consultoría Técnica</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Machalí, Sexta Región</span></li>
+            <li><span class="footer-link">Chile</span></li>
+            <li><a href="mailto:perdomomarcanojose@outlook.com" class="footer-link">perdomomarcanojose@outlook.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> José Manuel Perdomo (JOSMPERDOMO). Todos los derechos reservados.
+        </div>
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Volver arriba">
+          <span>Volver arriba</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script interactivo -->
+  <script src="js/main.js"></script>
+</body>
+</html>

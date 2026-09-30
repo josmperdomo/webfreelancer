@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clientes & Portafolio | José Manuel Perdomo - Freelancer</title>
+  <meta name="description" content="Explora los proyectos y casos de éxito desarrollados por José Manuel Perdomo: tiendas online, plataformas e-commerce y sitios web corporativos a medida." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Normalize y Estilos Modernos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Luces Ambientales de Fondo -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header Sticky con Efecto Glassmorphism -->
+  <header class="header-glass">
+    <div class="contenedor nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio">
+        <div class="brand-badge">JP</div>
+        <span>Jose Perdomo</span> <span style="color: var(--text-muted); font-weight: 500;">• Freelancer</span>
+      </a>
+
+      <!-- Navegación Principal Escritorio -->
+      <nav class="navegacion-principal" aria-label="Menú principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="sobremi.html" class="nav-link">Sobre mí</a>
+        <a href="cliente.html" class="nav-link activo">Clientes</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Acciones de Navegación -->
+      <div class="nav-actions">
+        <!-- Selector Modo Oscuro / Claro -->
+        <button id="theme-toggle-btn" class="btn-theme-toggle" aria-label="Alternar tema de color" title="Alternar tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="contacto.html" class="btn-nav-cta">
+          <span>Contáctame</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer Menú Móvil -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Navegación móvil">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="sobremi.html" class="nav-link">Sobre mí</a>
+    <a href="cliente.html" class="nav-link activo">Clientes</a>
+    <a href="contacto.html" class="nav-link">Contacto</a>
+    <a href="contacto.html" class="boton" style="margin-top: 0.5rem; text-align: center;">Iniciar Proyecto</a>
+  </div>
+
+  <main class="contenedor" style="padding-top: 3.5rem;">
+    <!-- Encabezado de la página -->
+    <div class="section-header">
+      <span class="section-tag">Casos de Éxito & Portafolio</span>
+      <h1 class="section-title">Clientes & <span class="gradient-text">Proyectos Realizados</span></h1>
+      <p class="section-desc">
+        Soluciones integrales de comercio electrónico y diseño web desarrolladas con altos estándares de calidad, velocidad y conversión.
+      </p>
+    </div>
+
+    <!-- Filtros Interactivos por Categoría -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+      <button class="filter-btn" data-filter="automotriz">Automotriz</button>
+      <button class="filter-btn" data-filter="moda">Moda Femenina</button>
+      <button class="filter-btn" data-filter="ecommerce">E-Commerce Masivo</button>
+    </div>
+
+    <!-- Cuadrícula de Proyectos -->
+    <div class="projects-grid">
+      <!-- Proyecto 1: PLANETSHOP (PSH) -->
+      <article class="glass-card project-card" data-category="automotriz">
+        <div class="project-img-wrapper">
+          <img class="project-img" src="img/psh.png" alt="PlanetShop repuestos automotrices" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-badge-tag">Repuestos & Autopartes</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">
+            <span>PLANETSHOP</span>
+            <span class="project-client-code">PSH</span>
+          </div>
+          <p class="project-desc">
+            Tienda digital de alto tráfico dedicada a la venta minorista y mayorista de repuestos automotrices multimarca, con buscador de piezas y pasarela de pago.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5 / CSS3</span>
+            <span class="project-tag">E-Commerce</span>
+            <span class="project-tag">Filtro por Modelo</span>
+            <span class="project-tag">Webpay Plus</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Cliente Activo</span>
+            <a href="contacto.html" class="project-link">
+              <span>Solicitar similar</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 2: MERCADESE (MER) -->
+      <article class="glass-card project-card" data-category="moda">
+        <div class="project-img-wrapper">
+          <img class="project-img" src="img/mer.png" alt="Mercadese tienda de ropa femenina" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-badge-tag">Boutique & Moda</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">
+            <span>MERCADESE</span>
+            <span class="project-client-code">MER</span>
+          </div>
+          <p class="project-desc">
+            Boutique online enfocada en la exhibición de indumentaria y ropa casual femenina, optimizada con catálogo visual y navegación mobile-first.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Diseño UI/UX</span>
+            <span class="project-tag">Moda Casual</span>
+            <span class="project-tag">Galería Lookbook</span>
+            <span class="project-tag">Checkout 1-Clic</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Cliente Activo</span>
+            <a href="contacto.html" class="project-link">
+              <span>Solicitar similar</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 3: VIVO TIENDAS (VT) -->
+      <article class="glass-card project-card" data-category="ecommerce">
+        <div class="project-img-wrapper">
+          <img class="project-img" src="img/vt.png" alt="Vivo Tiendas ecommerce multirrubro" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-badge-tag">Plataforma Multirrubro</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">
+            <span>VIVO TIENDAS</span>
+            <span class="project-client-code">VT</span>
+          </div>
+          <p class="project-desc">
+            E-commerce de gran envergadura dedicado a la comercialización de múltiples rubros con alta concurrencia y sincronización de stock en tiempo real.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Multi-Categoría</span>
+            <span class="project-tag">Alta Concurrencia</span>
+            <span class="project-tag">Stripe & Webpay</span>
+            <span class="project-tag">Panel Admin</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Cliente Activo</span>
+            <a href="contacto.html" class="project-link">
+              <span>Solicitar similar</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECCIÓN DE MOTIVACIÓN & COMPROMISO -->
+    <section class="motivation-section">
+      <div class="glass-card quote-card" style="padding: 3rem;">
+        <span class="section-tag">Filosofía Profesional</span>
+        <h2 style="font-size: 1.85rem; margin-bottom: 1.5rem;">Mi Compromiso con Cada Cliente</h2>
+        
+        <blockquote class="quote-text">
+          “En mi trabajo como programador web, me esfuerzo por ofrecer servicios de alta calidad y eficientes que satisfagan las necesidades específicas de mis clientes. Con más de 10 años de experiencia técnica, puedo crear sitios y aplicaciones que impulsan negocios reales, acompañados de soporte continuo, comunicación constante y precios transparentes.”
+        </blockquote>
+
+        <div class="quote-author">
+          <img class="quote-avatar" src="img/jmp.jpg" alt="José Manuel Perdomo" />
+          <div>
+            <div class="quote-author-name">José Manuel Perdomo</div>
+            <div class="quote-author-title">Programador Web Freelancer • Machalí, Chile</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER DE LLAMADO A LA ACCIÓN -->
+    <section class="glass-card" style="text-align: center; padding: 3.5rem 2rem; margin-bottom: 5rem; background: var(--gradient-card);">
+      <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">¿Listo para impulsar tu negocio digital?</h2>
+      <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto 2rem; font-size: 1.05rem;">
+        Conversemos sobre tu idea o proyecto. Diseñaremos una estrategia web personalizada que combine diseño premium con conversiones medibles.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contacto.html" class="boton">
+          <span>Solicitar Cotización Sin Costo</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="sobremi.html" class="boton2">
+          <span>Conocer mi metodología</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.75rem;">
+            <div class="brand-badge">JP</div>
+            <span>Jose Perdomo</span>
+          </a>
+          <p class="footer-brand-desc">
+            Desarrollador web y consultor tecnológico independiente. Creando sitios webs modernos, rápidos y centrados en resultados de negocio desde hace más de una década.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/josmperdomo" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:perdomomarcanojose@outlook.com" class="social-btn" aria-label="Correo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="sobremi.html" class="footer-link">Sobre Mí</a></li>
+            <li><a href="cliente.html" class="footer-link">Portafolio & Clientes</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto Directo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#servicios" class="footer-link">Diseño Web UI/UX</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Aplicaciones Web</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Tiendas E-Commerce</a></li>
+            <li><a href="contacto.html" class="footer-link">Consultoría Técnica</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Machalí, Sexta Región</span></li>
+            <li><span class="footer-link">Chile</span></li>
+            <li><a href="mailto:perdomomarcanojose@outlook.com" class="footer-link">perdomomarcanojose@outlook.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> José Manuel Perdomo (JOSMPERDOMO). Todos los derechos reservados.
+        </div>
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Volver arriba">
+          <span>Volver arriba</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script interactivo -->
+  <script src="js/main.js"></script>
+</body>
+</html>
